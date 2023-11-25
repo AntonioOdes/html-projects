@@ -1,0 +1,16 @@
+
+body{
+    margin:  20px;   
+}
+
+ul {
+    list-style-type: none; /* Remove default list item marker */
+    
+  }
+
+  /* Style for the pseudo-element that generates the custom marker */
+  ul li::before {
+    content: "-"; /* Use the counter value and add a dash */
+    font-weight: bold; /* Optional: Make the marker bold */
+    margin-right: 10px;
+  }

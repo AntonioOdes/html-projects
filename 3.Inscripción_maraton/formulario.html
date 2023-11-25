@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a corrida</title>
+</head>
+<body>
+    <hr>
+    <form action="index.html" method="get">
+        <h2>Inscripción a maraton</h2>
+        
+        <section id="datos-personales"> 
+            <h4>datos personales</h4>
+            <label for="nombres"><i>nombres</i></label><br><br>
+            <input required type="text" name="nombres" id="nombres" placeholder="ingrese nombres"><br><br><br>
+
+            <label for="apellidos"><i>apellidos</i></label><br><br>
+            <input required type="text" name="apellidos" id="apellidos" placeholder="ingrese apellidos"><br><br><br>
+
+            <label for="fecha-nacimiento"><i>fecha de nacimiento</i></label><br><br>
+            <input required type="date" name="fecha-nacimiento" id="fecha-nacimiento"><br><br><br>
+
+            <label for="rut"><i>rut</i></label><br><br>
+            <input required type="text" name="rut" id="rut" placeholder="12345678-k"><br><br><br>
+
+            <label for="area-trabajo" >area de trabajo</label>
+            <input list="area-trabajo" name="oarea-trabajo" id="oarea-trabajo">
+            <datalist id="area-trabajo">
+                <option value="construcción"></option>
+                <option value="aseo y servicio"></option>
+                <option value="informática y computación"></option>
+                <option value="salud"></option>
+                <option value="electrónica"></option>
+                <option value="construcción"></option>
+                <option value="aseo y servicio"></option>
+                <option value="informática y computación"></option>
+                <option value="salud"></option>
+                <option value="electrónica"></option>
+              </datalist>
+        </section>
+        <section id="datos-inscripcion">
+            <h4> datos de Inscripción</h4>
+            
+            <label for="categoria"><i>categoria</i></label><br><br>
+            <select name="categoria" id="categoria">
+                <option value="">seleccione una categoria</option>
+                <option value="10k">10k</option>
+                <option value="5k">5k</option>
+                <option value="3k">3k</option>
+            </select><br><br><br>
+
+            <label for="talla"><i>talla</i></label><br><br>
+            <select name="talla" id="talla">
+                <option value="">seleccione una talla</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        </section>
+        
+    </form>
+    <hr>
+</body>
+</html>
